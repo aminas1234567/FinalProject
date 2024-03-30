@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+    form {
+        width: 50%;
+        margin: 0 auto;
+    }
+    label, textarea, input[type="submit"] {
+        display: block;
+        margin-bottom: 10px;
+    }
+    textarea {
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+<div style="background-color: #E0FFFF">
+<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<h2>Contact Us</h2>
+<h3>Our Social Media Links</h3>
+<ul>
+    <li><a href="http://www.youtube.com/@aminashahzad3596">YouTube</a></li>
+    <li><a href="https://wa.me/<12265066708>">WhatsApp</a></li>
+    <li><a href="https://www.instagram.com/amiinaaa.sh?igsh=MXVvNjV4d2dubXFuZA%3D%3D&utm_source=gr">Instagram</a></li>
+    <!-- Add more social media links as needed -->
+</ul>
+
+<h3>Feedback Form</h3>
+<form action="submit_feedback.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Questions/Comments</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <input type="submit" value="Submit">
+</form>
+
+<h3>Our Location</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.7913127614447!2d-83.06861392441694!3d42.30431813862215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d77c6ec4bef%3A0x1a44f1192a4e41ee!2sUniversity%20of%20Windsor!5e0!3m2!1sen!2sca!4v1711691416772!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
